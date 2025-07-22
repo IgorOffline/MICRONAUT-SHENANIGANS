@@ -13,5 +13,6 @@
 <body style="padding: 5% 20% 5% 20%">
 <h1>Hello</h1>
 <script src="/js/hello.js"></script>
+<button onclick="helloFetch()">Fetch</button>
 </body>
 </html>
