@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ReactiveRain
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/malaishaone
+    username: REPLACE_WITH_ACTUAL_USERNAME
+    password: REPLACE_WITH_ACTUAL_PASSWORD
+  freemarker:
+    prefix: classpath:/templates/
+    suffix: .ftl
+    template-loader-path: classpath:/templates/
