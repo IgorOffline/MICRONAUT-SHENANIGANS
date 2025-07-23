@@ -8,12 +8,13 @@ import reactor.core.publisher.Mono
 
 @RestController
 @RequestMapping("/e")
-class RenataController {
+class RenataController(val rainGenerator: RainGenerator) {
 
     private val log = LoggerFactory.getLogger(RenataController::class.java)
 
     @GetMapping("/hello")
     fun getHello(): Mono<String> {
+        rainGenerator.generate(false)
         val str = "GET /e/hello"
         log.info(str)
         return Mono.just(str)
