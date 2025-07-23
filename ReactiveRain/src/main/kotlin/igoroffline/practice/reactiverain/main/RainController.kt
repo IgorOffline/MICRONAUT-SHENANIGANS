@@ -18,4 +18,11 @@ class RainController {
         log.info(str)
         return Rendering.view("hello").build()
     }
+
+    @GetMapping("/selecta")
+    fun getSelecta(): Rendering {
+        val str = "GET /m/selecta"
+        log.info(str)
+        return Rendering.view("selecta").build()
+    }
 }
